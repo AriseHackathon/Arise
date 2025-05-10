@@ -8,7 +8,7 @@ let userMessage = null;
 let isResponseGenerating = false;
 
 const API_KEY = "AIzaSyCjFrjf8JtB6rnT9nmkJ5hqnRbeE-HVMvk"; 
-const API_URL = `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`;
+const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
 const loadDataFromLocalstorage = () => {
 const savedChats = localStorage.getItem("saved-chats");
@@ -82,7 +82,7 @@ try {
 
 const showLoadingAnimation = () => {
 const html = `<div class="message-content">
-                <img class="avatar" src="Assets/IMAGES/HEPlogo.png" alt="Gemini avatar">
+                <img class="avatar" src="logo.png" alt="Sports avatar">
                 <p class="text"></p>
                 <div class="loading-indicator">
                     <div class="loading-bar"></div>
