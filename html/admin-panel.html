@@ -6,23 +6,24 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
    <title>SportSpot Admin Dashboard</title>
    <link rel="stylesheet" href="styles/admin-panel.css" />
+   <script src="./script/admin-panel.js" defer></script>
 </head>
 
 <body>
    <h1>- ADMIN PANEL -</h1>
    <div id="card-container">
-      <div class="card">All Events</div>
-      <div class="card">Registered Users</div>
-      <div class="card">Pending Approvals</div>
-      <div class="card">Verified Training Camps</div>
+      <div class="card" data-type="events"><span>All Events</span></div>
+      <div class="card" data-type="users"><span>Registered Users</span></div>
+      <div class="card" data-type="approvals"><span>Pending Approvals</span></div>
+      <div class="card" data-type="training"><span>Verified Training Camps</span></div>
    </div>
 
    <!-- Events Card content -->
-   <section id="card-content">
+   <section id="events-section" class="card-content">
       <h1>Events</h1>
       <h2>Total Events : <span>52</span> </h2>
-      <div id="event-content">
-         <div id="event-name">
+      <div class="event-content">
+         <div class="event-name">
             <ul>
                <li>Kannada Cricket Championship</li>
                <li>Delhi University Public Wrestling</li>
@@ -36,7 +37,7 @@
                <li>Let's Start | Marathon | 8Km.</li>
             </ul>
          </div>
-         <div id="event-detail">
+         <div class="event-detail">
             <p>Title - Kannada Cricket Championship</p>
             <p>Category- Cricket</p>
             <p>Location - Bangalore</p>
@@ -50,11 +51,11 @@
    </section>
 
    <!-- Users Card Content -->
-   <section id="card-content">
+   <section id="users-section" class="card-content">
       <h1>Users</h1>
       <h2>Total Users : <span>18</span> </h2>
-      <div id="event-content">
-         <div id="event-name">
+      <div class="event-content">
+         <div class="event-name">
             <ul>
                <li>alphonse@gmail.com</li>
                <li>gurthor@gmail.com</li>
@@ -63,7 +64,7 @@
                <li>grunpy3254@gmail.com</li>
             </ul>
          </div>
-         <div id="event-detail">
+         <div class="event-detail">
             <p>Name - Alphone Dent</p>
             <p>Age - 23</p>
             <p>Contact Number - +1 847652XXX</p>
@@ -76,11 +77,11 @@
    </section>
 
    <!-- Approvals Card Content -->
-   <section id="card-content">
+   <section id="approvals-section" class="card-content">
       <h1>Approvals</h1>
       <h2>Total Pending Approvals : <span>24</span> </h2>
-      <div id="event-content">
-         <div id="event-name">
+      <div class="event-content">
+         <div class="event-name">
             <ul>
                <li>Rothur Cycling Marathon</li>
                <li>Tictac Chess Tournament</li>
@@ -93,7 +94,7 @@
                <li>abc club | Riding</li>
             </ul>
          </div>
-         <div id="event-detail">
+         <div class="event-detail">
             <p>Title - Rothur Cycling Marathon</p>
             <p>Location - Noida</p>
             <p>Organizer Contact - abcclub@company.co</p>
@@ -106,11 +107,11 @@
    </section>
 
    <!-- Training Camps -->
-   <section id="card-content">
-      <h1>Trainig Camps</h1>
+   <section id="training-section" class="card-content">
+      <h1>Training Camps</h1>
       <h2>Total Training Camps : <span>36</span> </h2>
-      <div id="event-content">
-         <div id="event-name">
+      <div class="event-content">
+         <div class="event-name">
             <ul>
                <li>Judo under 18 | Bengal</li>
                <li>Haryana Play Cricket</li>
@@ -126,7 +127,7 @@
                <li>Training Camp r</li>
             </ul>
          </div>
-         <div id="event-detail">
+         <div class="event-detail">
             <p>Title - Judo under 18 | Bengal</p>
             <p>Location - Bengal</p>
             <p>Organizer Contact - bengal.judo@clubbeng.co</p>
