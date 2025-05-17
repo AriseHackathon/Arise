@@ -7,14 +7,53 @@ body {
 
 }
 
-.section {
+#page-content {
    display: grid;
-   grid-template-columns: 1fr 8fr 1fr;
+   grid-template-columns:1fr 5fr 1fr;
+   gap: 20px;
 }
 
-h2 {
-   font-size: 30px;
-   font-weight: 500;
+#container{
+ padding: 10px;
+}
+
+#games-type {
+   display: grid;
+   grid-template-columns: 1fr 9fr;
+}
+
+.game{
+   cursor: pointer;
+}
+
+.game.active{
+   background-color: #e492922a;
+}
+
+#games-type>div {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+}
+
+#games-type>div>h3 {
+   width: max-content;
+   text-align: center;
+   font-size: 18px;
+   font-weight: 400;
+   padding: 8px 15px;
+   margin: 0px;
+   border: 0.2px solid grey;
+   border-bottom: none;
+   border-radius: 10px 10px 0px 0px;
+}
+
+.section {
+   margin: 0px;
+   padding: 20px 30px;
+   border: 0.2px solid grey;
+   border-radius: 0px 10px 10px 10px;
+   display: grid;
+   grid-template-columns: 1fr 5fr 1fr;
 }
 
 .card-container {
@@ -26,50 +65,65 @@ h2 {
 }
 
 .card {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   border-radius: 8px;
-   gap: 15px;
-   width: 200px;
+   display: grid;
+   grid-template-rows: 2fr 1fr;
+   width: 280px;
+   border: 1px solid #000000;
+   border-radius: 15px;
+   box-shadow: 4px 4px 2.5px 1px;
+   gap: 8px;
+   padding: 5px;
+   height: 350px;
+   background-color: #e492922a;
 }
 
-.card>img {
-   cursor: pointer;
-   object-fit: cover;
-   border-radius: 8px;
-   height: 180px;
-}
+/* card image isn't yet customized */
 
-.card-content {
-   width: 90%;
+.card-title {
    text-align: center;
-   margin: 0px;
+   color: #000000;
    cursor: pointer;
-   ;
-}
-
-.card-content>h3 {
    margin: 0px;
    font-size: 22px;
    letter-spacing: 2.5px;
    padding-bottom: 3px;
    font-weight: 600;
-   ;
 }
 
-.card-content>p {
+.card-content {
+   display: grid;
+   grid-template-columns: 4fr 1fr;
+   padding: 8px 12px;
+}
+
+.card-content>div>p {
+   color: #2c2c2c;
+   text-align: left;
    margin: 0px;
    font-size: 18px;
    font-weight: 200;
 }
 
-#past>.card>img {
-   filter: grayscale(1);
-   opacity: 0.9;
+.card-detail-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-#past>.card>.card-content {
+.card-detail-link>button {
+   border: 1px solid gray;
+   box-shadow: 2px 2px 1px 1px;
+   border-radius: 5px;
+   background: none;
+   font-size: 25px;
+   cursor: pointer;
+}
+
+
+#past .card img {
+   filter: grayscale(1);
+}
+
+#past .card {
    opacity: 0.95;
 }
