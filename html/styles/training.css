@@ -1,0 +1,108 @@
+body {
+   background-color: #ffffff;
+   color: #000000;
+   margin: 0px;
+   padding: 0px;
+   height: 100vh;
+
+}
+
+#page-content {
+   display: grid;
+   grid-template-columns: 1fr 5fr 1fr;
+   gap: 20px;
+}
+
+#container {
+   padding: 10px;
+}
+
+main {
+   display: grid;
+   grid-template-columns: 1fr 9fr;
+}
+
+#game-type {
+   font-size: 18px;
+   width: max-content;
+   text-align: center;
+   font-weight: 400;
+   padding: 8px 15px;
+   margin: 0px;
+   border: 0.2px solid grey;
+   border-bottom: none;
+   border-radius: 10px 10px 0px 0px;
+}
+
+.section {
+   margin: 0px;
+   padding: 20px 30px;
+   border: 0.2px solid grey;
+   border-radius: 0px 10px 10px 10px;
+   display: grid;
+   grid-template-columns: 1fr 5fr 1fr;
+}
+
+.card-container {
+   display: grid;
+   align-items: center;
+   justify-items: center;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   gap: 30px;
+}
+
+.card {
+   display: grid;
+   grid-template-rows: 2fr 1fr;
+   width: 300px;
+   border: 1px solid #000000;
+   border-radius: 15px;
+   box-shadow: 4px 4px 2.5px 1px;
+   gap: 8px;
+   padding: 5px;
+   height: 450px;
+   background-color: #e492922a;
+}
+
+/* card image isn't yet customized */
+
+.card-title {
+   text-align: center;
+   color: #000000;
+   cursor: pointer;
+   margin: 0px;
+   font-size: 22px;
+   letter-spacing: 2.5px;
+   padding-bottom: 3px;
+   font-weight: 600;
+}
+
+.card-content {
+   display: grid;
+   grid-template-columns: 4fr 1fr;
+   padding: 8px 12px;
+}
+
+.card-content>div>p {
+   color: #2c2c2c;
+   text-align: left;
+   margin: 0px;
+   font-size: 18px;
+   font-weight: 200;
+}
+
+.card-detail-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-detail-link>button {
+   border: 1px solid gray;
+   box-shadow: 2px 2px 1px 1px;
+   border-radius: 5px;
+   background: none;
+   font-size: 25px;
+   cursor: pointer;
+   padding: 8px 12px;
+}
